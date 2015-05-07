@@ -1,0 +1,35 @@
+{
+    "project_type": "javascript",
+
+    "debugMode" : 1,
+    "showFPS" : true,
+    "frameRate" : 60,
+    "id" : "gameCanvas",
+    "renderMode" : 0,
+    "engineDir":"frameworks/cocos2d-html5",
+
+    "modules" : ["cocos2d"],
+
+    "jsList" : [
+        "src/resource.js",
+        "src/GameLayer.js",
+        "src/Player.js",
+        "src/Bun.js",
+        "src/Efreeti.js",
+        "src/Fishbone.js",
+        "src/Gameover.js",
+     "src/GameoverBlackground.js",
+        "src/Heart.js",
+        "src/Items.js",
+        "src/Lalala.js",
+        "src/Magman.js",
+        "src/MenuPage.js",
+        "src/Monster.js",
+        "src/mushroom1.js",
+        "src/mushroom2.js",
+        "src/GameLayer.js",
+        "src/Power.js",
+        "src/Stopwatch.js",
+        "src/sucrose.js"
+    ]
+}
