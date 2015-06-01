@@ -1,15 +1,12 @@
-var Efreeti = Monster.Extend({
+var Efreeti = Monster.extend({
 
     ctor: function(){
         this._super();
         this.initWithFile('res/images/Efreeti.png');
-    },
-    
-    update: function(dt){
-        var pos = this.getPostion();
-        this.vy = -11;
-        this.setPosition(pos.x,pos.y+this.vy);
+        this.setAnchorPoint( new cc.p( 0, 0 ));
     }
+    
+
         
     
     });

@@ -1,3 +1,5 @@
+ var life = 5;
+
 var Player = cc.Sprite.extend({
     ctor: function() {
         this._super();
@@ -39,7 +41,6 @@ var Player = cc.Sprite.extend({
            this.setPositionY(screenHeight+40);
         }
 		
-		console.log("vy"+this.vy);
 
     },
 
@@ -65,7 +66,6 @@ var Player = cc.Sprite.extend({
 
 
     jump: function(jumping) {
-    	console.log("jump");
         var pos = this.getPosition();
         this.vy = Player.JUMPING_VELOCITY; 
         this.setPosition( new cc.Point( pos.x, pos.y + 50) );
@@ -76,12 +76,6 @@ var Player = cc.Sprite.extend({
     		this.started  = true;
             this.setPosition(this.setPositionY(0));
     	}
-    },
-    
-    addSpeed: function(){
-        if( this.speed < 8 ){
-            this.speed += 2;
-        }
     }
 
 

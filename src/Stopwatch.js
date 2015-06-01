@@ -13,10 +13,5 @@ var Stopwatch = cc.Sprite.extend({
              this.unscheduleUpdate();
         }
         
-    },
-    
-    addtime: function(){
-        if(this.timer>0){        this.Schedule(this.timer+10,1);
-        }
     }
 });
